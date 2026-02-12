@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<title>THẾ ĐIỆN CỰC - HÓA HỌC 12</title>
+<style>
+body{
+    font-family: Arial;
+    background: linear-gradient(to right, #e0f7fa, #ffffff);
+    margin:0;
+    padding:0;
+}
+header{
+    background:#00695c;
+    color:white;
+    padding:20px;
+    text-align:center;
+}
+section{
+    padding:20px;
+    margin:20px;
+    background:white;
+    border-radius:10px;
+    box-shadow:0 0 10px rgba(0,0,0,0.1);
+}
+h2{
+    color:#00695c;
+}
+button{
+    background:#00897b;
+    color:white;
+    border:none;
+    padding:10px 20px;
+    border-radius:5px;
+    cursor:pointer;
+}
+button:hover{
+    background:#004d40;
+}
+input{
+    padding:8px;
+    margin:5px;
+}
+footer{
+    text-align:center;
+    padding:10px;
+    background:#00695c;
+    color:white;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <h1>CHUYÊN ĐỀ: THẾ ĐIỆN CỰC</h1>
+    <p>Giáo viên: Dương Thị Thơ</p>
+</header>
+
+<section>
+<h2>I. Lý thuyết cơ bản</h2>
+<p><b>Thế điện cực chuẩn (E°)</b> là thế của điện cực khi nồng độ dung dịch 1M, áp suất 1 atm, nhiệt độ 25°C.</p>
+<p>Công thức tính suất điện động pin:</p>
+<p><b>E°pin = E°catot − E°anot</b></p>
+</section>
+
+<section>
+<h2>II. Bảng thế điện cực chuẩn (một số giá trị)</h2>
+<ul>
+<li>Zn²⁺/Zn : -0.76 V</li>
+<li>Fe²⁺/Fe : -0.44 V</li>
+<li>Cu²⁺/Cu : +0.34 V</li>
+<li>Ag⁺/Ag : +0.80 V</li>
+</ul>
+</section>
+
+<section>
+<h2>III. Máy tính suất điện động pin</h2>
+
+<label>Nhập E° catot (V):</label>
+<input type="number" id="catot" step="0.01"><br>
+
+<label>Nhập E° anot (V):</label>
+<input type="number" id="anot" step="0.01"><br>
+
+<button onclick="tinh()">Tính E° pin</button>
+
+<h3 id="ketqua"></h3>
+
+<script>
+funct
